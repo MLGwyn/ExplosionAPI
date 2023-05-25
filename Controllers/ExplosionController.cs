@@ -11,7 +11,7 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class ExplosionController : ControllerBase
     {
-        [HttpGet("{s}")]
+        [HttpGet("{digits}")]
         public string Explode(string digits)
         {
             char[] array = digits.ToCharArray();

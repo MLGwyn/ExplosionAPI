@@ -11,7 +11,7 @@ namespace ExplosionAPI.Controllers
     [ApiController]
     public class MumblingController : ControllerBase
     {
-        [HttpGet("{s}")]
+        [HttpGet("{mumbling}")]
         public String Mumbling(string mumbling)
         {
             char[] array = mumbling.ToCharArray();
