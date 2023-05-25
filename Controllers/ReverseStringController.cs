@@ -12,9 +12,9 @@ namespace ExplosionAPI.Controllers
     public class ReverseStringController : ControllerBase
     {
         [HttpGet("{str}")]
-        public string Reverse(string str)
+        public string Reverse(string reverse)
         {
-            char[] array = str.ToCharArray();
+            char[] array = reverse.ToCharArray();
             Array.Reverse(array);
             return new string(array);
         }

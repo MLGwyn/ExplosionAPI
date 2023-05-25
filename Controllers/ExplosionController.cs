@@ -12,9 +12,9 @@ namespace ExplosionAPI.Controllers
     public class ExplosionController : ControllerBase
     {
         [HttpGet("{s}")]
-        public static string Explode(string s)
+        public string Explode(string digits)
         {
-            char[] array = s.ToCharArray();
+            char[] array = digits.ToCharArray();
             string combined = "";
             foreach (var dChar in array)
             {
